@@ -6,47 +6,56 @@
 <title>SpeedX Event Fest 2026</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial,sans-serif;
 background:#000;
 color:white;
 }
 
-header{
-background:linear-gradient(90deg,#000,#b30000);
-padding:40px;
+nav{
+background:#111;
+padding:15px;
+position:sticky;
+top:0;
 text-align:center;
 }
 
-header h1{
-font-size:50px;
+nav a{
 color:red;
-text-shadow:0 0 15px red;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
 }
 
-header p{
-margin-top:10px;
+.hero{
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200') center/cover;
+}
+
+.hero h1{
+font-size:60px;
+text-shadow:0 0 20px red;
+}
+
+.hero button{
+padding:12px 25px;
+background:red;
+border:none;
+color:white;
 font-size:18px;
+border-radius:8px;
 }
 
-section{
-padding:40px;
+.section{
+padding:50px 20px;
 }
 
-h2{
-color:red;
-margin-bottom:20px;
-border-left:5px solid red;
-padding-left:10px;
-}
-
-.cards{
+.card-container{
 display:flex;
 flex-wrap:wrap;
 gap:20px;
@@ -55,147 +64,121 @@ justify-content:center;
 
 .card{
 background:#111;
-border:2px solid red;
-border-radius:15px;
-padding:20px;
 width:300px;
-transition:0.3s;
+border:2px solid red;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 0 15px red;
 }
 
-.card:hover{
-transform:scale(1.05);
-box-shadow:0 0 20px red;
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
 }
 
-.card h3{
-color:red;
-margin-bottom:10px;
+.card-content{
+padding:15px;
 }
 
-.price{
-font-size:25px;
-font-weight:bold;
-color:#ff4d4d;
-}
-
-button{
+.card button{
+width:100%;
+padding:10px;
 background:red;
-color:white;
 border:none;
-padding:12px 25px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-margin-top:15px;
-}
-
-button:hover{
-background:#ff3333;
+color:white;
 }
 
 footer{
 text-align:center;
-padding:25px;
+padding:20px;
 background:#111;
-margin-top:30px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>🏎 SPEEDX EVENT FEST 2026</h1>
-<p>Racing • Dance • Music • Fun Activities</p>
-</header>
+<nav>
+<a href="#">Home</a>
+<a href="#">Events</a>
+<a href="#">Features</a>
+<a href="#">Gallery</a>
+<a href="#">Registration</a>
+<a href="#">Contact</a>
+</nav>
 
-<section>
-<h2>🏁 Car Racing Events</h2>
+<section class="hero">
+<h1>SpeedX Event Fest 2026</h1>
+<p>Racing • Dance • Music • Cycling • Gaming</p>
+<button>Register Now</button>
+</section>
 
-<div class="cards">
+<section class="section">
+<h2>🏎️ Car Racing</h2>
+
+<div class="card-container">
 
 <div class="card">
-<h3>5 KM Racing</h3>
-<p>Entry Fee: ₹300</p>
-<p class="price">Prize ₹5,000</p>
-<button>Register Now</button>
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800">
+<div class="card-content">
+<h3>5 KM Race</h3>
+<p>Prize: ₹5,000</p>
+<button>Register</button>
+</div>
 </div>
 
 <div class="card">
-<h3>10 KM Racing</h3>
-<p>Entry Fee: ₹500</p>
-<p class="price">Prize ₹10,000</p>
-<button>Register Now</button>
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800">
+<div class="card-content">
+<h3>10 KM Race</h3>
+<p>Prize: ₹10,000</p>
+<button>Register</button>
 </div>
-
-<div class="card">
-<h3>13 KM Racing</h3>
-<p>Entry Fee: ₹700</p>
-<p class="price">Prize ₹15,000</p>
-<button>Register Now</button>
 </div>
 
 </div>
 </section>
 
-<section>
+<section class="section">
 <h2>💃 Dance Show</h2>
 
-<div class="cards">
+<div class="card-container">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800">
+<div class="card-content">
 <h3>Solo Dance</h3>
-<p>Entry Fee: ₹100</p>
-<p class="price">Prize ₹3,000</p>
-<button>Register Now</button>
+<p>Show your talent and win exciting prizes.</p>
+<button>Register</button>
 </div>
-
-<div class="card">
-<h3>Group Dance</h3>
-<p>Entry Fee: ₹500</p>
-<p class="price">Prize ₹10,000</p>
-<button>Register Now</button>
 </div>
 
 </div>
 </section>
 
-<section>
-<h2>🎤 Other Events</h2>
+<section class="section">
+<h2>🎮 Gaming Tournament</h2>
 
-<div class="cards">
+<div class="card-container">
 
 <div class="card">
-<h3>Music Competition</h3>
-<p>Show Your Talent</p>
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800">
+<div class="card-content">
+<h3>Battle Arena</h3>
+<p>Compete against top gamers.</p>
 <button>Register</button>
 </div>
-
-<div class="card">
-<h3>Gaming Tournament</h3>
-<p>Battle With Friends</p>
-<button>Register</button>
-</div>
-
-<div class="card">
-<h3>Cycling Challenge</h3>
-<p>Race To Win</p>
-<button>Register</button>
-</div>
-
-<div class="card">
-<h3>Photography Contest</h3>
-<p>Capture Moments</p>
-<button>Register</button>
 </div>
 
 </div>
 </section>
 
 <footer>
-<h3>📍 SpeedX Event Fest 2026</h3>
-<p>Register Now & Win Exciting Prizes</p>
+<h3>SpeedX Event Fest 2026</h3>
+<p>Contact: info@speedxfest.com</p>
 </footer>
 
 </body>
 </html>
+

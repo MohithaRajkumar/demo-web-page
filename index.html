@@ -1,48 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My New Page</title>
-</head>
-<body>
-    <h1>Welcome to My New Webpage</h1>
-    <p>This page is hosted using GitHub and Vercel.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>My AI Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpeedX Event Fest 2026</title>
+
 <style>
-body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    background:#f4f4f4;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-h1{
-    color:#0070f3;
+body{
+background:#000;
+color:white;
+}
+
+header{
+background:linear-gradient(90deg,#000,#b30000);
+padding:40px;
+text-align:center;
+}
+
+header h1{
+font-size:50px;
+color:red;
+text-shadow:0 0 15px red;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+section{
+padding:40px;
+}
+
+h2{
+color:red;
+margin-bottom:20px;
+border-left:5px solid red;
+padding-left:10px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:#111;
+border:2px solid red;
+border-radius:15px;
+padding:20px;
+width:300px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px red;
+}
+
+.card h3{
+color:red;
+margin-bottom:10px;
+}
+
+.price{
+font-size:25px;
+font-weight:bold;
+color:#ff4d4d;
 }
 
 button{
-    background:#0070f3;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
+background:red;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+margin-top:15px;
+}
+
+button:hover{
+background:#ff3333;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#111;
+margin-top:30px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>What Can AI Do For Me?</h1>
+<header>
+<h1>🏎 SPEEDX EVENT FEST 2026</h1>
+<p>Racing • Dance • Music • Fun Activities</p>
+</header>
 
-<p>AI can help with learning, coding, content creation, and problem solving.</p>
+<section>
+<h2>🏁 Car Racing Events</h2>
 
-<button onclick="alert('Welcome to AI World!')">
-Click Me
-</button>
+<div class="cards">
+
+<div class="card">
+<h3>5 KM Racing</h3>
+<p>Entry Fee: ₹300</p>
+<p class="price">Prize ₹5,000</p>
+<button>Register Now</button>
+</div>
+
+<div class="card">
+<h3>10 KM Racing</h3>
+<p>Entry Fee: ₹500</p>
+<p class="price">Prize ₹10,000</p>
+<button>Register Now</button>
+</div>
+
+<div class="card">
+<h3>13 KM Racing</h3>
+<p>Entry Fee: ₹700</p>
+<p class="price">Prize ₹15,000</p>
+<button>Register Now</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>💃 Dance Show</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Solo Dance</h3>
+<p>Entry Fee: ₹100</p>
+<p class="price">Prize ₹3,000</p>
+<button>Register Now</button>
+</div>
+
+<div class="card">
+<h3>Group Dance</h3>
+<p>Entry Fee: ₹500</p>
+<p class="price">Prize ₹10,000</p>
+<button>Register Now</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>🎤 Other Events</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Music Competition</h3>
+<p>Show Your Talent</p>
+<button>Register</button>
+</div>
+
+<div class="card">
+<h3>Gaming Tournament</h3>
+<p>Battle With Friends</p>
+<button>Register</button>
+</div>
+
+<div class="card">
+<h3>Cycling Challenge</h3>
+<p>Race To Win</p>
+<button>Register</button>
+</div>
+
+<div class="card">
+<h3>Photography Contest</h3>
+<p>Capture Moments</p>
+<button>Register</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+<h3>📍 SpeedX Event Fest 2026</h3>
+<p>Register Now & Win Exciting Prizes</p>
+</footer>
 
 </body>
 </html>
